@@ -1,0 +1,15 @@
+.Soon-bar {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    /* background-color: white; */
+    /* padding-top: 10px; */
+    padding-left: 5px;
+}
+.Soon-bar img {
+    width: 70px;
+    height: 70px;
+    /* background-color: white; */
+}

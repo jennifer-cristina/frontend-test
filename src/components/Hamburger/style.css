@@ -1,0 +1,29 @@
+.hamburger {
+    width: 70%;
+    height: 100%;
+    display: none;
+    height: fit-content; 
+    cursor: pointer;
+    /* padding: 3px 8px; */
+    border-radius: 5px;
+    transition: 0.2s;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    transition: 2s;
+}
+
+@media (max-width: 500px) {
+.hamburger {
+    width: 70%;
+    height: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* padding-right: 10px; */
+    /* background: #f00; */
+    }
+}

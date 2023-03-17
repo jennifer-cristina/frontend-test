@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.Main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F3DECA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Card-menu {
+    width: 20vw;
+    height: 100%;
+    /* background-color: #282c3477; */
+}
+
+.Card-menu #Header {
+    display: none;
+}
+
+.Card-form {
+    width: 80vw;
+    height: 100%;
+    /* background-color: #282c3477; */
+}
+
+.Card-form #Container {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    /* background-color: red; */
+}
+
+.Card-form #Form-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    text-align: flex-start;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+#Form-container .Inputs-container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.Card-form #Soon-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+.Card-form #Soon-container  #Soon-register {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.Card-form #Soon-container  #Soon-register img {
+    width: 70px;
+    height: 70px;
+    /* background-colo  r: white; */
+    padding-left: 80px;
+}
+
+.Card-form #Soon-container  #Soon-register text {
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* color: white; */
+}
+
+
+
+.navigation {
+    position: relative;
+    height: 100%;
+    width: 70px;
+    background: #2D244177;
+    box-shadow: 10px 0 0 #2C284B;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-left: 10px solid Transparent;
+    overflow-x:hidden; 
+    transition: width 0.5s;
+}
+
+.navigation:hover {
+    width: 200px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* .navigation ul li:hover {
+    background: #2C284B;
+} */
+
+.navigation ul .active {
+    background: #2C284B;
+} 
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation ul .active a::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: Transparent; 
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #2C284B;
+}
+
+.navigation ul .active a::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: Transparent; 
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #2C284B;
+
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    top: 15px;
+    text-align: center;
+    line-height: 70px;
+    /* background: #f00; */
+}
+
+.navigation ul li a .icon ion-icon {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding-left: 35px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+} 
+
+.Card-menu #Header .hamburger {
+    width: 50%;
+    height: 100%;
+    display: none;
+    height: fit-content; 
+    cursor: pointer;
+    /* padding: 3px 8px; */
+    border-radius: 5px;
+    transition: 0.2s;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+
+@media (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+    .Main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .Card-menu {
+        width: 100%;
+        height: 10%;
+        /* background-color: white; */
+    }
+    .Card-form {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* background-color: green; */
+    }
+    .Card-form #Form-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* background-color: white; */
+    }
+   
+    .Card-menu #Header .hamburger {
+        width: 50%;
+        height: 50%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+        /* background: #f00; */
+    }
+    .Card-menu #Header {
+        width: 100vw;
+        height: 100%;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        /* background: #f00;  */
+    }
+    .Card-menu #Header #Soon {
+        /* background-color: #024a92; */
+        display: flex;
+        padding: 10px 10px;
+        width: 50%;
+        height: 100%;
+    }
+    .Card-menu #Header #Soon img {
+        width: 70px;
+        height: 70px;
+    }
+    div .Card-login #Form #Soon {
+       display: none;
+    }
+    .Card-form #Soon-container {
+        display: none;
+        /* background-color: #282c3477; */
+    }
+    #Nav-bar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Nav-bar .Soon-bar {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        /* background-color: white; */
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+    #Nav-bar .Soon-bar img {
+        width: 70px;
+        height: 70px;
+        /* background-color: white; */
+    }
+    #Nav-bar .Nav {
+        width: 70%;
+        height: 100%;
+        background-color: #2D244177;
+        border-left: 5px solid white; 
+    }
+    #Nav-bar .Nav .Button-container {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        /* background-color: #ffffff44; */
+    }
+    .Menu {
+        width: 100%;
+        height: 80%;
+        /* background-color: #ffffff; */
+        
+    }
+    .Menu ul li {
+        list-style: none;
+    }
+    .Menu ul li a .icon {
+        position: relative;
+        display: block;
+        min-width: 40px;
+        height: 40px;
+        top: 50px;
+        text-align: center;
+        line-height: 70px;
+        /* background: #f00; */
+    }
+    .Menu ul li a .title {
+        position: relative;
+        display: block;
+        padding-left: 35px;
+        height: 60px;
+        line-height: 60px;
+        white-space: nowrap;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+    } 
+}
+
+@media (max-width: 500px) {
+    .Main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('../../assets/images/background.png');
+        background-color: #F3DECA;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .Card-menu .navigation {
+        display: none;
+    }
+    .Card-menu #Header .hamburger {
+        width: 50%;
+        height: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+        /* background: #f00; */
+    }
+    .Card-menu {
+        width: 100vw;
+        height: 10%;
+        /* background-color: #282c3477; */
+    }    
+    .Card-form {
+        width: 100vw;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* background-color: green; */
+    }
+    .Card-form #Form-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* background-color: white; */
+    }
+    
+    #Nav-bar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Nav-bar .Soon-bar {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        /* background-color: white; */
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+    #Nav-bar .Soon-bar img {
+        width: 70px;
+        height: 70px;
+        /* background-color: white; */
+    }
+    #Nav-bar .Nav {
+        width: 70%;
+        height: 100%;
+        background-color: #2D244177;
+        border-left: 5px solid white; 
+    }
+    #Nav-bar .Nav .Button-container {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        /* background-color: #ffffff44; */
+    }
+    .Menu {
+        width: 100%;
+        height: 80%;
+        /* background-color: #ffffff; */
+        
+    }
+    .Menu ul li {
+        list-style: none;
+    }
+    .Menu ul li a .icon {
+        position: relative;
+        display: block;
+        min-width: 40px;
+        height: 40px;
+        top: 50px;
+        text-align: center;
+        line-height: 70px;
+        /* background: #f00; */
+    }
+    .Menu ul li a .title {
+        position: relative;
+        display: block;
+        padding-left: 35px;
+        height: 60px;
+        line-height: 60px;
+        white-space: nowrap;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+    } 
+}

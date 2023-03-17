@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.Main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F3DECA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.planet {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    max-width: 80%;
+    max-height: 80%;
+    animation: animatePlanet 8s ease-in-out infinite;
+    overflow-y: hidden;
+    /* max- */
+}
+
+@keyframes animatePlanet {
+    0%,100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+.Card-menu {
+    width: 50vw;
+    height: 100%;
+}
+
+.Card-menu #Header {
+    display: none;
+}
+
+.Card-login {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+div .Card-login #Form {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #F2E6E699;
+}
+
+div .Card-login #Form #Soon-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+div .Card-login #Form #Register {
+    width: 100%;
+    height: 20%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* background-color: green; */
+}
+
+div .Card-login #Form .Button-container {
+    width: 100%;
+    height: 10%;
+    background-color: Transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+@media (max-width: 900px) {
+    .planet {
+            position: absolute;
+            top: 200px;
+            left: 0px;
+            max-width: 100%;
+            max-height: 90%;
+            animation: animatePlanet 8s ease-in-out infinite;
+            /* background: #f00; */
+    }
+        
+    @keyframes animatePlanet {
+        0%,100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(50px);
+        }
+    }
+
+    div .Card-login #Form {
+        background-color: #F2E6E699;
+        width: 350px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .Main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('../../assets/images/background.png');
+        background-color: #F3DECA;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .planet {
+        z-index: -1;
+    }
+    .Card-menu {
+        width: 100vw;
+        height: 20%;
+        /* background-color: #282c3477; */
+    }
+    .Card-login {
+        width: 100vw;
+        height: 80%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        /* background-color: #024a92; */
+    }
+    .Card-menu #Header {
+        width: 100vw;
+        height: 100%;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        /* background: #f00;  */
+    }
+    div .Card-login #Form {
+        background-color: #F2E6E699;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    #Nav-bar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Nav-bar .Nav {
+        width: 70%;
+        height: 100%;
+        background-color: #2D244177;
+        border-left: 5px solid white; 
+    }
+    #Nav-bar .Nav .Button-container {
+        width: 100%;
+        height: 10%;
+        /* background-color: Transparent; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: white; */
+    }
+}

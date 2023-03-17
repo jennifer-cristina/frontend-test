@@ -1,0 +1,34 @@
+.Button-close {
+    width: 30%;
+    height: 50%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    /* background-color: #ffffff44; */
+}
+
+.Button-close img {
+    width: 30px;
+    height: 30px;
+    /* background-color: #ffffff44; */
+}
+
+@media (max-width: 500px) {
+    .Button-close {
+        width: 100%;
+        height: 100%;
+        /* background-color: Transparent; */
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        /* background-color: red; */
+    }
+    .Button-close img {
+        width: 30px;
+        height: 30px;
+        /* background-color: #ffffff44; */
+    } 
+}
