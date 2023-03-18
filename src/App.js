@@ -1,4 +1,5 @@
-import './App.css';
+import './globals/css/style.css';
+
 import Navigation from './navigation/routes';
 
 function App() {

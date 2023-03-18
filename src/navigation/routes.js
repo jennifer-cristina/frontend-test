@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-import { Login } from '../screens/Login/index';
-import { Register } from '../screens/Register/index';
+import { Login } from '../pages/Login/index';
+import { Register } from '../pages/Register/index';
 
 const Navigation = () => {
     return (

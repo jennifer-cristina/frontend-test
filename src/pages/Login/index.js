@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { ButtonSubmit } from '../../components/Button';
 import { ButtonClose } from '../../components/ButtonClose';
-import { Form } from '../../components/Form';
+import { Form, LoginForm } from '../../components/Form';
 import { Hamburger } from '../../components/Hamburger';
 import { LinkRegister } from '../../components/LinkRegister';
 import { Menu } from '../../components/Menu';
@@ -10,7 +10,7 @@ import { MenuBar } from '../../components/MenuBar';
 import { Soon } from '../../components/Soon';
 import { SoonBar } from '../../components/SoonBar';
 import planet from '../../assets/images/planet.png';
-// import '../Login/style.css';
+import './style.css';
 
 export const Login = () => {
 
@@ -28,29 +28,30 @@ export const Login = () => {
         item.addEventListener('click', activeLink))
 
     return (
-        <div className='Main'>
+        <div id='main-login'>
 
             {
                 menu ? (
-                    <div id='Nav-bar'>
+
+                    <div id='menu-mobile-container'>
 
                         <SoonBar />
 
-                        <div className='Nav'>
+                        <nav className='nav-mobile'>
 
-                            {/* <div className='Button-container'> */}
                             <ButtonClose onPress={() => setMenu(false)} />
-                            {/* </div> */}
 
                             <Menu />
 
-                        </div>
+                        </nav>
+
                     </div>
+
                 ) : (
                     <>
-                        <img src={planet} className='planet' />
+                        <img src={planet} id='planet' />
 
-                        <div className='Card-menu'>
+                        <div id='menu-container'>
 
                             <MenuBar />
 
@@ -63,7 +64,7 @@ export const Login = () => {
 
                         </div>
 
-                        <div className='Card-login'>
+                        <div id='login-form-container'>
 
                             <div id='Form'>
 
@@ -71,9 +72,9 @@ export const Login = () => {
                                     <Soon />
                                 </div>
 
-                                <Form />
+                                <LoginForm />
 
-                                <div className='Button-container'>
+                                <div className='button-container'>
                                     <ButtonSubmit
                                         title='ENTRAR'
                                     />

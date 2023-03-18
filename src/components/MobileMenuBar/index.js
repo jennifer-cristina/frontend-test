@@ -7,10 +7,10 @@ import phone from '../../assets/icons/phone.png';
 import message from '../../assets/icons/message.png';
 import './style.css'
 
-export const MenuBar = () => {
+export const MobileMenuBar = () => {
 
     return (
-        <div id='navigation'>
+        <div id='mobile-navigation'>
             <ul>
                 <li className='list active'>
                     <a href='#'>

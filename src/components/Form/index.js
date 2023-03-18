@@ -4,7 +4,7 @@ import email from '../../assets/icons/email.png';
 import password from '../../assets/icons/password.png';
 import './style.css';
 
-export const Form = () => {
+export const LoginForm = () => {
 
     return (
         <div id='Form-container'>

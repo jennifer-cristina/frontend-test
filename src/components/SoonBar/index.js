@@ -6,7 +6,7 @@ import './style.css'
 export const SoonBar = () => {
 
     return (
-        <div className='Soon-bar'>
+        <div id='Soon-bar'>
             <img src={soon} />
         </div>
     );

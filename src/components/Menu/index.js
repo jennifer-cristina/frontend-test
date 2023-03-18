@@ -10,7 +10,7 @@ import './style.css'
 export const Menu = () => {
 
     return (
-        <div className='Menu'>
+        <div id='menu-mobile'>
             <ul>
                 <li className='list'>
                     <a href='#'>

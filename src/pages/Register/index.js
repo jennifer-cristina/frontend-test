@@ -14,6 +14,7 @@ import { Menu } from '../../components/Menu';
 import { MenuBar } from '../../components/MenuBar';
 import { Soon } from '../../components/Soon';
 import { SoonBar } from '../../components/SoonBar';
+import { MobileMenuBar } from '../../components/MobileMenuBar';
 
 export const Register = () => {
 
@@ -31,19 +32,19 @@ export const Register = () => {
         item.addEventListener('click', activeLink))
 
     return (
-        <div className='Main'
+        <div id='main-register'
             style={{ backgroundImage: `URL(${background})` }}
         >
 
             {
                 menu ? (
-                    <div id='Nav-bar'>
-                        <div className='Soon-bar'>
-                            <img src={soon} />
-                        </div>
-                        <div className='Nav'>
+                    <div id='menu-mobile-container'>
 
-                            <div className='Button-container'>
+                        <SoonBar />
+
+                        <div className='nav-mobile'>
+
+                            <div className='button-container'>
                                 <ButtonClose onPress={() => setMenu(false)} />
                             </div>
 
@@ -53,9 +54,9 @@ export const Register = () => {
                     </div>
                 ) : (
                     <>
-                        <div className='Card-menu'>
+                        <div className='Card-menu-register'>
 
-                            <MenuBar />
+                            <MobileMenuBar />
 
                             <div id='Header'>
 
@@ -77,8 +78,6 @@ export const Register = () => {
                             <div id='Form-container'>
 
                                 <FormRegister />
-
-                                <Link to="/">retornar a página inicial</Link>
 
                             </div>
 
