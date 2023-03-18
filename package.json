@@ -2,7 +2,7 @@
   "name": "immobile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jennifer-cristina/frontend-test",
+  "homepage": ".",
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
